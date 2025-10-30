@@ -1,23 +1,23 @@
-# CS2MarketMonitoring
+# CS2Radar
 
-A Mobile App to monitor CS2 (Counter-Strike 2) items on the Steam Market.
+Um aplicativo móvel para monitorar itens do CS2 (Counter-Strike 2) no Mercado Steam.
 
 # About
 
-This project is made for CS2 players who enjoy investing in the Steam Market and want a solution to monitor desirable items to buy or sell at specific prices.  
-  
-The **backend** will be developed using **Supabase** (PostgreSQL Database) to store the complete list of CS2 items from the Steam Market, a list of popular items, and the items selected by users for more precise analysis and monitoring.  
-  
-The **frontend** will use **Flutter** with **Dart** to create the UI and to cache the user's item list, delivering a better and faster user experience.  
+Este projeto é feito para jogadores de CS2 que gostam de investir no Mercado Steam e desejam uma solução para monitorar itens desejáveis para comprar ou vender a preços específicos.
 
-# Key Features
+O **backend** será desenvolvido usando Supabase (Banco de Dados PostgreSQL) para armazenar a lista completa de itens do CS2 do Mercado Steam, uma lista de itens populares e os itens selecionados pelos usuários para análise e monitoramento mais precisos.
 
-- Custom Price Alerts: Users can add up to 10 items to their personal watchlist (refreshed hourly) and set custom minimum (buy) and maximum (sell) price alerts.
+O **frontend** usará Flutter com Dart para criar a UI e armazenar em cache a lista de itens do usuário, oferecendo uma experiência de usuário melhor e mais rápida.
 
-- Hybrid Price Caching: The app provides instant prices for a "VIP List" of ~500 popular items, which are refreshed hourly by the backend.
+# Principais Funcionalidades
 
-- On-Demand Price Checking: For rare items (not on the VIP list), users can perform a limited number of on-demand checks per day. This invokes an Edge Function that fetches live prices securely without using the user`s IP address.
+- Alertas de Preço Personalizados: Os usuários podem adicionar até 10 itens à sua lista de observação pessoal (atualizada de hora em hora) e definir alertas personalizados de preço mínimo (compra) e máximo (venda).
 
-- Local-First Caching: The user's watchlist is saved to a local database (possibly Hive) on the device. This ensures instant loading times and offline access to the last-known prices.
+- Cache Híbrido de Preços: O aplicativo fornece preços instantâneos para as caixas do jogo, que são atualizados de hora em hora pelo backend.
 
-- Smart Search: A robust search and pagination system (with a minimum-character limit) to efficiently query the 19,000+ item database.
+- Verificação de Preço Sob Demanda: Para itens raros (que não são caixas do jogo), os usuários podem realizar um número limitado de verificações sob demanda por dia. Isso invoca uma Edge Function que busca os preços ao vivo com segurança, sem usar o endereço IP do usuário.
+
+- Cache Local-First: A lista de observação do usuário é salva em um banco de dados local (possivelmente Hive) no dispositivo. Isso garante tempos de carregamento instantâneos e acesso offline aos últimos preços conhecidos.
+
+- Busca Inteligente: Um sistema robusto de busca e paginação (com um limite mínimo de caracteres) para consultar eficientemente o banco de dados de mais de 19.000 itens.
