@@ -2,7 +2,7 @@
 
 Um aplicativo móvel para monitorar itens do CS2 (Counter-Strike 2) no Mercado Steam.
 
-# About
+# Sobre
 
 Este projeto é feito para jogadores de CS2 que gostam de investir no Mercado Steam e desejam uma solução para monitorar itens desejáveis para comprar ou vender a preços específicos.
 
